@@ -15,7 +15,6 @@ handler1 = WebhookHandler(os.getenv('CHANNEL_SECRET'))
 # 設置計數器初始值
 message_counter = 0
 
-
 @app.route('/callback', methods=['POST'])
 def callback():
     global message_counter  # 修改計數器的值
