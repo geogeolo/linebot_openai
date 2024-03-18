@@ -49,6 +49,8 @@ def handle_message(event):
         ret = '發生錯誤！'
     line_bot_api.reply_message(event.reply_token,TextSendMessage(text=ret))
     message_counter += 1  # 每次處理時，增加計數器的值
+    print("計數器值:", message_counter)  # 輸出計數器的值
+
 
 if __name__ == '__main__':
     app.run()
